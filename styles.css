@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  background: #001629;
+  color: #2d3436;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Card Styles */
+.card {
+  background-color: #001629;
+  border-radius: 15px;
+  max-width: 100% !important;
+  color: white;
+  margin: auto;
+  border: none !important;
+  box-shadow: transparent !important;;
+  
+
+}
+
+/* Text Container */
+#text-container {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: #001629 !important;
+}
+
+/* Highlighting Correct and Wrong Characters */
+#text-to-type span.correct {
+  opacity: 1;
+  color: #84e4ff;
+  font-weight: 300;
+}
+#text-to-type span {
+  opacity: 1;
+  color: #ffffff3a;
+  font-weight: 100;
+}
+
+#text-to-type span.wrong {
+  opacity: 1;
+  color: #e74c3c; /* Red for wrong letters */
+  font-weight: 300;
+}
+
+/* Timer */
+#timer {
+  font-size: 1.5rem;
+  color: #0984e3;
+}
+
+/* Button Focus Style */
+button:focus {
+  box-shadow: 0 0 10px #6c5ce7;
+}
+
+/* Result */
+#result {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #text-container {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  #timer {
+    font-size: 1.2rem;
+  }
+}
